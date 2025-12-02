@@ -1,11 +1,11 @@
 name: Deploy to Hostinger
 
- on:
+on:
    push:
      branches:
        - main
 
- jobs:
+jobs:
    deploy:
      runs-on: ubuntu-latest
 
@@ -20,7 +20,7 @@ name: Deploy to Hostinger
            username: ${{ secrets.SERVER_USER }}
            key: ${{ secrets.SERVER_SSH_KEY }}
            script: |
-            cd /home/test.aimwin.in/public_html/wings-landingpage--rahman
-            git pull origin development
+            cd /home/test.aimwin.in/public_html/wings-landingpage-rahman
+            git pull origin main
             cp -r * ../
             

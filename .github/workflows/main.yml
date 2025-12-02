@@ -22,5 +22,4 @@ jobs:
            script: |
             cd /home/test.aimwin.in/public_html/wings-landingpage-rahman
             git pull origin main
-            cp -r * ../
             
